@@ -18,4 +18,4 @@ export default function ContactPage() {
 // SSD : 512GB
 // HDD : 2TB
 // CPU : ryzen 5 5600X
-Motherbaord
+// Motherbaord
