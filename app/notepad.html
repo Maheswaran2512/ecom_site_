@@ -1,0 +1,205 @@
+<div> 
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js logo"
+          width={100}
+          height={20}
+          priority
+        />
+        <div>2test</div>
+        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            To get started, edit the page.tsx file.
+          </h1>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            Looking for a starting point or more instructions? Head over to{" "}
+            <a
+              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              Templates
+            </a>{" "}
+            or the{" "}
+            <a
+              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              Learning
+            </a>{" "}
+            center.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+          <a
+            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={16}
+              height={16}
+            />
+            Deploy Now
+          </a>
+          <a
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Documentation
+          </a>
+        </div>
+      </main> 
+    </div>
+
+
+**CSS → Tailwind Cheat Sheet**
+
+- **Display:** `display: block` → `block`; `display: inline` → `inline`; `display: inline-block` → `inline-block`; `display: flex` → `flex`; `display: grid` → `grid`; `display: none` → `hidden`.
+- **Box sizing / overflow / visibility:** `box-sizing: border-box` → `box-border`; `box-sizing: content-box` → `box-content`; `overflow: auto` → `overflow-auto`; `overflow-x: scroll` → `overflow-x-auto`; `visibility: hidden` → `invisible`.
+- **Position / inset:** `position: relative` → `relative`; `position: absolute` → `absolute`; `position: fixed` → `fixed`; `top: 0` → `top-0`; `right: 1rem` → `right-4`; `inset: 0` → `inset-0`.
+- **Z-index:** `z-index: 10` → `z-10` (also `z-0`, `z-20`, ...).
+- **Flex container:** `flex-direction: row` → `flex-row`; `flex-direction: column` → `flex-col`; `flex-wrap: wrap` → `flex-wrap`; `justify-content: center` → `justify-center`; `align-items: start` → `items-start`; `gap: 1rem` → `gap-4` / `gap-x-2` / `gap-y-3`.
+- **Flex item:** `flex: 1` → `flex-1`; `flex: none` → `flex-none`; `order: 1` → `order-1`; `align-self: center` → `self-center`.
+- **Grid:** `display: grid` → `grid`; `grid-template-columns: repeat(3, 1fr)` → `grid-cols-3`; `grid-auto-rows: minmax(0,1fr)` → `auto-rows-auto` (or use specific utilities); `grid-column: span 2` → `col-span-2`; `place-items: center` → `place-items-center`.
+- **Spacing (margin / padding):** `margin: 0.5rem` → `m-2`; `margin-top: 1rem` → `mt-4`; `padding: 0.25rem 0.5rem` → `py-1 px-2`; negative margin: `margin-left: -0.25rem` → `-ml-1`.
+- **Width / Height / Max/Min:** `width: 100%` → `w-full`; `width: 16rem` → `w-64`; `height: auto` → `h-auto`; `max-width: 24rem` → `max-w-md`; `min-height: 100vh` → `min-h-screen`.
+- **Typography (size/weight/line-height):** `font-size: 1rem` → `text-base`; `font-size: 1.25rem` → `text-xl`; `font-weight: 700` → `font-bold`; `line-height: 1` → `leading-none`; `text-align: center` → `text-center`.
+- **Font style / transform / decoration:** `font-style: italic` → `italic`; `text-transform: uppercase` → `uppercase`; `text-decoration: underline` → `underline`.
+- **Color / opacity:** `color: #374151` → `text-gray-700`; `background-color: #fff` → `bg-white`; `opacity: 0.5` → `opacity-50`; `text-opacity: 75%` → `text-opacity-75`.
+- **Backgrounds / gradients:** `background-size: cover` → `bg-cover`; `background-position: center` → `bg-center`; gradient: `background: linear-gradient(...)` → `bg-gradient-to-r from-indigo-500 to-pink-500`.
+- **Borders:** `border: 1px solid` → `border` (default `border-gray-200`); `border-width: 2px` → `border-2`; `border-color: red` → `border-red-500`; `border-radius: 9999px` → `rounded-full`; `border-style: dashed` → `border-dashed`.
+- **Box shadow:** `box-shadow: 0 4px 6px rgba(...)` → `shadow-lg`, smaller `shadow`, none `shadow-none`.
+- **Opacity / mix-blend / filter:** `mix-blend-mode: multiply` → `mix-blend-multiply`; `filter: blur(4px)` → `filter blur-sm`.
+- **Transforms & transitions:** `transform: translateX(8px)` → `translate-x-2`; `transform: rotate(45deg)` → `rotate-45`; `transform: scale(1.1)` → `scale-110`; `transition: all .2s` → `transition duration-200 ease-in-out`.
+- **Cursor / pointer / user-select:** `cursor: pointer` → `cursor-pointer`; `pointer-events: none` → `pointer-events-none`; `user-select: none` → `select-none`.
+- **Visibility / accessibility:** `display: none` for print/responsive → `hidden`; `sr-only` (visually hidden) → `sr-only`.
+- **Lists / tables:** `list-style: disc` → `list-disc`; `list-style: decimal` → `list-decimal`; tables: `table-layout: fixed` → `table-fixed`, `table-auto`.
+- **SVG / stroke / fill:** `stroke: currentColor` → `stroke-current`; `stroke-width: 2` → `stroke-2`; `fill: currentColor` → `fill-current`.
+- **Responsive & state variants:** `@media (min-width: 640px) { display: flex }` → `sm:flex`; `:hover { background-color: blue }` → `hover:bg-blue-500`; `:focus` → `focus:outline-none`.
+- **Arbitrary values (one-off):** `height: 42px` → `className="[height:42px]"`; `all: unset` → `className="[all:unset]"`; `grid-template-columns: 200px 1fr` → `className="[grid-template-columns:200px_1fr]"`.
+- **Custom properties / CSS vars:** `--my: 10px` → `style={{ \"--my\": \"10px\" }}` or use arbitrary: `className="[--my:10px]"` (Tailwind JIT supports arbitrary properties).
+- **Example conversions (compact):**
+  - `display:flex; gap:16px;` → `className="flex gap-4"`
+  - `padding:8px 12px; border-radius:4px;` → `className="px-3 py-2 rounded-md"`
+  - `font-weight:600; font-size:1.125rem;` → `className="font-semibold text-lg"`
+  - `position:absolute; top:0; right:0;` → `className="absolute top-0 right-0"`
+
+Notes:
+- Tailwind uses a scale (0,0.5,1,1.5,2,3,4,5,6,8,10,12,16,20,24,32,40,48,56,64) for spacing/sizing — e.g. `p-4` = 1rem by default.
+- Use responsive prefixes (`sm:`, `md:`) and state prefixes (`hover:`, `focus:`).
+- For anything not provided out-of-the-box use arbitrary values: `[property:value]`.
+- For reusable custom utilities, add them in `tailwind.config.js` via `theme.extend` or `plugins`.
+
+If you want, I can:
+- Generate a downloadable full mapping CSV or Markdown of common CSS properties → Tailwind classes.
+- Create a one-file cheat-sheet component you can copy into your project. Which would you prefer?
+
+
+
+import ServiceCard from "../../components/ServiceCard";
+
+export default function ProductPage() {
+	const services = [
+		{
+			title: "Website Design",
+			description: "Custom responsive website design to showcase your brand.",
+			price: "$1,200",
+			imgSrc: "/service1.jpg",
+		},
+		{
+			title: "SEO Optimization",
+			description: "Improve search rankings and increase organic traffic.",
+			price: "$800",
+			imgSrc: "/service2.jpg",
+		},
+		{
+			title: "Consulting",
+			description: "Strategic consulting to grow your online business.",
+			price: "$150/hr",
+			imgSrc: "/service3.jpg",
+		},
+	];
+
+	return (
+		<div className="min-h-screen p-8">
+			<h1 className="text-3xl font-bold mb-6">Services</h1>
+
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+				{services.map((s) => (
+					<ServiceCard
+						key={s.title}
+						title={s.title}
+						description={s.description}
+						price={s.price}
+						imgSrc={s.imgSrc}
+					/>
+				))}
+			</div>
+		</div>
+	);
+}
+
+import Image from "next/image";
+
+type Props = {
+    title: string;
+    description: string;
+    price: string;
+    imgSrc: string;
+};
+
+export default function ServiceCard({ title, description, price, imgSrc }: Props) {
+    return (
+        <article className="bg-white rounded-lg shadow-sm p-4 flex flex-col h-full border-0.1 border-transparent [box-shadow:0_10px_15px_-3px_rgba(99,102,241,0.35)] transform-gpu transition-all duration-300 ease-out will-change-transform hover:scale-105 hover:border-blue-200 hover:[box-shadow:0_10px_15px_-3px_rgba(99,102,241,0.5),0_0_20px_rgba(59,130,246,0.8)]">
+            <div className="relative w-full h-48 rounded overflow-hidden mb-4">
+                <Image src={imgSrc} alt={title} fill className="object-cover" />
+            </div>
+
+            <h3 className="text-lg text-black font-semibold mb-1">{title}</h3>
+            <p className="text-sm text-black mb-4 flex-1">{description}</p>
+
+            <div className="mt-2 text-right">
+                <span className="text-xl text-black font-bold">{price}</span>
+            </div>
+        </article>
+    );
+}
+
+
+errimport Link from "next/link";
+
+export default function ServerErrorPage() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-950 text-white px-6 py-12">
+      <div className="max-w-xl text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Server Error</p>
+        <h1 className="mt-6 text-6xl font-bold">500</h1>
+        <p className="mt-4 text-lg text-gray-300">
+          Something went wrong on our end. Please try refreshing the page or come back later.
+        </p>
+        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <Link
+            href="/"
+            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
+          >
+            Go back home
+          </Link>
+          <Link
+            href="/contact"
+            className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Contact support
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
+}
