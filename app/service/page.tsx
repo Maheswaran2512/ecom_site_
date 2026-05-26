@@ -1,4 +1,4 @@
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "../../components/ServiceCard";
 
 const products = [
     {
@@ -48,25 +48,25 @@ const products = [
         title: "Website Design",
         description: "Custom responsive website design to showcase your brand.",
         price: "$1,200",
-        imgSrc: "/globe.svg",
+        img: "/globe.svg",
     },
     {
         id: 8,
         title: "SEO Optimization",
         description: "Improve search rankings and increase organic traffic.",
         price: "$800",
-        imgSrc: "/globe.svg",
+        img: "/globe.svg",
     },
     {
         id: 9,
         title: "Consulting",
         description: "Strategic consulting to grow your online business.",
         price: "$150/hr",
-        imgSrc: "/globe.svg",
+        img: "/globe.svg",
     },
 ];
 
-export default function service() {
+export default function ServicePage() {
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-100 font-sans">
             <main className="rounded-lg flex flex-col flex-1 w-full max-w-6xl items-center justify-around text-center py-10 px-5 bg-white gap-evenly mt-20 mb-2">
@@ -78,7 +78,7 @@ export default function service() {
                             title={p.title}
                             description={p.description}
                             price={p.price}
-                            imgSrc={p.img}
+                            img={p.img}
                         />
                     ))}
                 </div>

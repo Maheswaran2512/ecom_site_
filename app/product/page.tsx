@@ -95,7 +95,7 @@ export default function ProductPage() {
                             description={p.description}
                             specs={p.specs}
                             price={p.price}
-                            imgSrc={p.img}
+                            img={p.img}
                         />
                     ))}
                 </div>

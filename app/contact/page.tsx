@@ -10,12 +10,3 @@ export default function ContactPage() {
 			</div>
 	);
 }
-
-
-// RAM : 16GB
-// GPU : RTX 4050
-// Monitor : 24 inch 144Hz
-// SSD : 512GB
-// HDD : 2TB
-// CPU : ryzen 5 5600X
-// Motherbaord
